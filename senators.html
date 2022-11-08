@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- <button onclick="partyCount(data)">Click me</button> -->
+ 
+    
+    <!-- function filter(data,party,state,rank) -->
+
+    <div>
+      <h2>Democrats, Republicans and Independents</h2>
+     <div id="Democrats"></div>
+     <div id="Republicans"></div>
+     <div id="Independents"></div>
+    </div>
+
+    <div>
+      <h2>Leadership Roles</h2>
+     <div id="leadershipRoles"></div>
+    </div>
+
+   
+      <div class="dropdown">
+        <button class="dropbtn">Filter by Party</button>
+        <div class="dropdown-content">
+          <a onclick="masterFilter('Republican',null,null)">Republican</a>
+          <a onclick="masterFilter('Democrat',null,null)">Democrat</a>
+          <a onclick="masterFilter('Independent',null,null)">Independent</a>
+          <a onclick="masterFilter('',null,null)">Reset</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Filter by State</button>
+        <div class="dropdown-content">
+          <a onclick="filterByState(data,'IA')">Ioha</a>
+          
+          <a onclick="filterByState(data,'')">Reset</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Filter by Rank</button>
+        <div class="dropdown-content">
+          <a onclick="filterByRank(data,'junior')">Junior</a>
+          <a onclick="filterByRank(data,'senior')">Senior</a>
+          <a onclick="filterByRank(data,'')">Reset</a>
+        </div>
+      </div>
+
+
+
+    <div id="senatorDisplay"></div>
+
+    
+
+
+    <!-- 👇️ type set to module -->
+    <script src="main.js">
+
+
+    </script>
+  </body>
+</html>
